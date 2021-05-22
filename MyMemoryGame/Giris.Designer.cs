@@ -38,11 +38,11 @@
             this.pb_r = new System.Windows.Forms.PictureBox();
             this.pb_y2 = new System.Windows.Forms.PictureBox();
             this.gb_giris = new System.Windows.Forms.GroupBox();
-            this.pb_user = new System.Windows.Forms.PictureBox();
-            this.tb_kadi = new System.Windows.Forms.TextBox();
-            this.btn_kolay = new System.Windows.Forms.Button();
-            this.btn_orta = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.btn_orta = new System.Windows.Forms.Button();
+            this.btn_kolay = new System.Windows.Forms.Button();
+            this.tb_kadi = new System.Windows.Forms.TextBox();
+            this.pb_user = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pb_m)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_y)).BeginInit();
@@ -61,7 +61,7 @@
             this.pb_m.BackColor = System.Drawing.Color.Transparent;
             this.pb_m.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_m.Image = global::MyMemoryGame.Properties.Resources.keyboard_key_m;
-            this.pb_m.Location = new System.Drawing.Point(312, 39);
+            this.pb_m.Location = new System.Drawing.Point(226, 50);
             this.pb_m.Name = "pb_m";
             this.pb_m.Size = new System.Drawing.Size(66, 50);
             this.pb_m.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -73,7 +73,7 @@
             this.pb_y.BackColor = System.Drawing.Color.Transparent;
             this.pb_y.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_y.Image = global::MyMemoryGame.Properties.Resources.y;
-            this.pb_y.Location = new System.Drawing.Point(384, 39);
+            this.pb_y.Location = new System.Drawing.Point(298, 50);
             this.pb_y.Name = "pb_y";
             this.pb_y.Size = new System.Drawing.Size(66, 50);
             this.pb_y.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -85,7 +85,7 @@
             this.pb_m1.BackColor = System.Drawing.Color.Transparent;
             this.pb_m1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_m1.Image = global::MyMemoryGame.Properties.Resources.keyboard_key_m;
-            this.pb_m1.Location = new System.Drawing.Point(168, 95);
+            this.pb_m1.Location = new System.Drawing.Point(82, 106);
             this.pb_m1.Name = "pb_m1";
             this.pb_m1.Size = new System.Drawing.Size(66, 50);
             this.pb_m1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -97,7 +97,7 @@
             this.pb_e.BackColor = System.Drawing.Color.Transparent;
             this.pb_e.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_e.Image = global::MyMemoryGame.Properties.Resources.keyboard_key_e;
-            this.pb_e.Location = new System.Drawing.Point(240, 95);
+            this.pb_e.Location = new System.Drawing.Point(154, 106);
             this.pb_e.Name = "pb_e";
             this.pb_e.Size = new System.Drawing.Size(66, 50);
             this.pb_e.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,7 +109,7 @@
             this.pb_m3.BackColor = System.Drawing.Color.Transparent;
             this.pb_m3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_m3.Image = global::MyMemoryGame.Properties.Resources.keyboard_key_m;
-            this.pb_m3.Location = new System.Drawing.Point(312, 95);
+            this.pb_m3.Location = new System.Drawing.Point(226, 106);
             this.pb_m3.Name = "pb_m3";
             this.pb_m3.Size = new System.Drawing.Size(66, 50);
             this.pb_m3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -121,7 +121,7 @@
             this.pb_o.BackColor = System.Drawing.Color.Transparent;
             this.pb_o.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_o.Image = global::MyMemoryGame.Properties.Resources.key_o_of_a_compter_keyboard;
-            this.pb_o.Location = new System.Drawing.Point(384, 95);
+            this.pb_o.Location = new System.Drawing.Point(298, 106);
             this.pb_o.Name = "pb_o";
             this.pb_o.Size = new System.Drawing.Size(66, 50);
             this.pb_o.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,7 +133,7 @@
             this.pb_r.BackColor = System.Drawing.Color.Transparent;
             this.pb_r.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_r.Image = global::MyMemoryGame.Properties.Resources.letter_r_key_on_keyboard;
-            this.pb_r.Location = new System.Drawing.Point(456, 95);
+            this.pb_r.Location = new System.Drawing.Point(370, 106);
             this.pb_r.Name = "pb_r";
             this.pb_r.Size = new System.Drawing.Size(66, 50);
             this.pb_r.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,7 +145,7 @@
             this.pb_y2.BackColor = System.Drawing.Color.Transparent;
             this.pb_y2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_y2.Image = global::MyMemoryGame.Properties.Resources.y;
-            this.pb_y2.Location = new System.Drawing.Point(528, 95);
+            this.pb_y2.Location = new System.Drawing.Point(442, 106);
             this.pb_y2.Name = "pb_y2";
             this.pb_y2.Size = new System.Drawing.Size(66, 50);
             this.pb_y2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -161,55 +161,12 @@
             this.gb_giris.Controls.Add(this.tb_kadi);
             this.gb_giris.Controls.Add(this.pb_user);
             this.gb_giris.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gb_giris.Location = new System.Drawing.Point(215, 164);
+            this.gb_giris.Location = new System.Drawing.Point(129, 175);
             this.gb_giris.Name = "gb_giris";
             this.gb_giris.Size = new System.Drawing.Size(304, 293);
             this.gb_giris.TabIndex = 8;
             this.gb_giris.TabStop = false;
             this.gb_giris.Text = "Giriş Yap";
-            // 
-            // pb_user
-            // 
-            this.pb_user.Image = global::MyMemoryGame.Properties.Resources.customer;
-            this.pb_user.Location = new System.Drawing.Point(15, 29);
-            this.pb_user.Name = "pb_user";
-            this.pb_user.Size = new System.Drawing.Size(60, 62);
-            this.pb_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_user.TabIndex = 0;
-            this.pb_user.TabStop = false;
-            // 
-            // tb_kadi
-            // 
-            this.tb_kadi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tb_kadi.Location = new System.Drawing.Point(93, 50);
-            this.tb_kadi.Name = "tb_kadi";
-            this.tb_kadi.Size = new System.Drawing.Size(169, 27);
-            this.tb_kadi.TabIndex = 1;
-            this.tb_kadi.Text = "Kullanıcı Adı Giriniz...";
-            // 
-            // btn_kolay
-            // 
-            this.btn_kolay.BackColor = System.Drawing.Color.Lime;
-            this.btn_kolay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_kolay.Location = new System.Drawing.Point(113, 107);
-            this.btn_kolay.Name = "btn_kolay";
-            this.btn_kolay.Size = new System.Drawing.Size(97, 43);
-            this.btn_kolay.TabIndex = 2;
-            this.btn_kolay.Text = "KOLAY";
-            this.btn_kolay.UseVisualStyleBackColor = false;
-            this.btn_kolay.Click += new System.EventHandler(this.btn_kolay_Click);
-            // 
-            // btn_orta
-            // 
-            this.btn_orta.BackColor = System.Drawing.Color.DarkOrange;
-            this.btn_orta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_orta.Location = new System.Drawing.Point(113, 166);
-            this.btn_orta.Name = "btn_orta";
-            this.btn_orta.Size = new System.Drawing.Size(97, 43);
-            this.btn_orta.TabIndex = 3;
-            this.btn_orta.Text = "ORTA";
-            this.btn_orta.UseVisualStyleBackColor = false;
-            this.btn_orta.Click += new System.EventHandler(this.btn_orta_Click);
             // 
             // button3
             // 
@@ -223,6 +180,50 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // btn_orta
+            // 
+            this.btn_orta.BackColor = System.Drawing.Color.DarkOrange;
+            this.btn_orta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_orta.Location = new System.Drawing.Point(113, 166);
+            this.btn_orta.Name = "btn_orta";
+            this.btn_orta.Size = new System.Drawing.Size(97, 43);
+            this.btn_orta.TabIndex = 3;
+            this.btn_orta.Text = "ORTA";
+            this.btn_orta.UseVisualStyleBackColor = false;
+            this.btn_orta.Click += new System.EventHandler(this.btn_orta_Click);
+            // 
+            // btn_kolay
+            // 
+            this.btn_kolay.BackColor = System.Drawing.Color.Lime;
+            this.btn_kolay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_kolay.Location = new System.Drawing.Point(113, 107);
+            this.btn_kolay.Name = "btn_kolay";
+            this.btn_kolay.Size = new System.Drawing.Size(97, 43);
+            this.btn_kolay.TabIndex = 2;
+            this.btn_kolay.Text = "KOLAY";
+            this.btn_kolay.UseVisualStyleBackColor = false;
+            this.btn_kolay.Click += new System.EventHandler(this.btn_kolay_Click);
+            // 
+            // tb_kadi
+            // 
+            this.tb_kadi.CausesValidation = false;
+            this.tb_kadi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tb_kadi.Location = new System.Drawing.Point(93, 50);
+            this.tb_kadi.Name = "tb_kadi";
+            this.tb_kadi.Size = new System.Drawing.Size(169, 27);
+            this.tb_kadi.TabIndex = 1;
+            this.tb_kadi.Text = "Kullanıcı Adı Giriniz...";
+            // 
+            // pb_user
+            // 
+            this.pb_user.Image = global::MyMemoryGame.Properties.Resources.customer;
+            this.pb_user.Location = new System.Drawing.Point(15, 29);
+            this.pb_user.Name = "pb_user";
+            this.pb_user.Size = new System.Drawing.Size(60, 62);
+            this.pb_user.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_user.TabIndex = 0;
+            this.pb_user.TabStop = false;
+            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -230,7 +231,7 @@
             this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.linkLabel1.ForeColor = System.Drawing.Color.White;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(257, 460);
+            this.linkLabel1.Location = new System.Drawing.Point(194, 471);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(220, 22);
             this.linkLabel1.TabIndex = 9;
@@ -244,7 +245,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MyMemoryGame.Properties.Resources.bg3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(747, 535);
+            this.ClientSize = new System.Drawing.Size(582, 535);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.gb_giris);
             this.Controls.Add(this.pb_y2);
