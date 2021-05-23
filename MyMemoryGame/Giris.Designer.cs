@@ -38,7 +38,7 @@
             this.pb_r = new System.Windows.Forms.PictureBox();
             this.pb_y2 = new System.Windows.Forms.PictureBox();
             this.gb_giris = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_zor = new System.Windows.Forms.Button();
             this.btn_orta = new System.Windows.Forms.Button();
             this.btn_kolay = new System.Windows.Forms.Button();
             this.tb_kadi = new System.Windows.Forms.TextBox();
@@ -155,7 +155,7 @@
             // gb_giris
             // 
             this.gb_giris.BackColor = System.Drawing.Color.Transparent;
-            this.gb_giris.Controls.Add(this.button3);
+            this.gb_giris.Controls.Add(this.btn_zor);
             this.gb_giris.Controls.Add(this.btn_orta);
             this.gb_giris.Controls.Add(this.btn_kolay);
             this.gb_giris.Controls.Add(this.tb_kadi);
@@ -168,17 +168,17 @@
             this.gb_giris.TabStop = false;
             this.gb_giris.Text = "Giriş Yap";
             // 
-            // button3
+            // btn_zor
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(113, 233);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 43);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "ZOR";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_zor.BackColor = System.Drawing.Color.Red;
+            this.btn_zor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_zor.Location = new System.Drawing.Point(113, 233);
+            this.btn_zor.Name = "btn_zor";
+            this.btn_zor.Size = new System.Drawing.Size(97, 43);
+            this.btn_zor.TabIndex = 4;
+            this.btn_zor.Text = "ZOR";
+            this.btn_zor.UseVisualStyleBackColor = false;
+            this.btn_zor.Click += new System.EventHandler(this.button3_Click);
             // 
             // btn_orta
             // 
@@ -290,7 +290,7 @@
         private System.Windows.Forms.PictureBox pb_y2;
         private System.Windows.Forms.GroupBox gb_giris;
         private System.Windows.Forms.PictureBox pb_user;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_zor;
         private System.Windows.Forms.Button btn_orta;
         private System.Windows.Forms.Button btn_kolay;
         private System.Windows.Forms.TextBox tb_kadi;

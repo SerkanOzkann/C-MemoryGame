@@ -16,5 +16,10 @@ namespace MyMemoryGame
         {
             InitializeComponent();
         }
+
+        private void btn_cikis_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

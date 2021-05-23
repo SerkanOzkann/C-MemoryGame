@@ -16,6 +16,7 @@ namespace MyMemoryGame
         {
             InitializeComponent();
         }
+        public static string sendData;
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -37,6 +38,7 @@ namespace MyMemoryGame
             }
             else
             {
+                sendData = tb_kadi.Text;
                 f1.Show();
                 this.Hide();
             }
@@ -51,6 +53,7 @@ namespace MyMemoryGame
             }
             else
             {
+                sendData = tb_kadi.Text;
                 f2.Show();
                 this.Hide();
             }
@@ -66,6 +69,7 @@ namespace MyMemoryGame
             }
             else
             {
+                sendData = tb_kadi.Text;
                 f3.Show();
                 this.Hide();
             }

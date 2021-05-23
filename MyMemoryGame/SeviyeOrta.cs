@@ -105,7 +105,7 @@ namespace MyMemoryGame
 
         private void SeviyeOrta_Load(object sender, EventArgs e)
         {
-            
+            lbl_gamer.Text = Giris.sendData;
             resimSifirla();
             tagSifirla();
             tagDagit();
@@ -230,6 +230,13 @@ namespace MyMemoryGame
 
 
             }
+        }
+
+        private void btn_anamenu_Click(object sender, EventArgs e)
+        {
+            Giris giris = new Giris();
+                giris.Show();
+                this.Hide();
         }
     }
 }

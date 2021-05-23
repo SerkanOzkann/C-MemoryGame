@@ -85,8 +85,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SeviyeKolay.resx">
+      <DependentUpon>SeviyeKolay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SeviyeOrta.resx">
       <DependentUpon>SeviyeOrta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeviyeZor.resx">
+      <DependentUpon>SeviyeZor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -59,6 +59,8 @@
             this.lbl_gamer = new System.Windows.Forms.Label();
             this.pb_gamer = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btn_anamenu = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -126,7 +128,7 @@
             this.btn_cikis.BackColor = System.Drawing.Color.Red;
             this.btn_cikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cikis.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_cikis.Location = new System.Drawing.Point(711, 286);
+            this.btn_cikis.Location = new System.Drawing.Point(711, 340);
             this.btn_cikis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cikis.Name = "btn_cikis";
             this.btn_cikis.Size = new System.Drawing.Size(120, 49);
@@ -472,6 +474,19 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btn_anamenu
+            // 
+            this.btn_anamenu.BackColor = System.Drawing.Color.Yellow;
+            this.btn_anamenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_anamenu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_anamenu.Location = new System.Drawing.Point(711, 284);
+            this.btn_anamenu.Name = "btn_anamenu";
+            this.btn_anamenu.Size = new System.Drawing.Size(120, 49);
+            this.btn_anamenu.TabIndex = 6;
+            this.btn_anamenu.Text = "Ana Menü";
+            this.btn_anamenu.UseVisualStyleBackColor = false;
+            this.btn_anamenu.Click += new System.EventHandler(this.btn_anamenu_Click);
+            // 
             // SeviyeOrta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -479,6 +494,7 @@
             this.BackgroundImage = global::MyMemoryGame.Properties.Resources.bg4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(900, 726);
+            this.Controls.Add(this.btn_anamenu);
             this.Controls.Add(this.gb_orta);
             this.Controls.Add(this.btn_cikis);
             this.Controls.Add(this.btn_yenioyun);
@@ -563,5 +579,7 @@
         private System.Windows.Forms.PictureBox pb_durum;
         private System.Windows.Forms.Label lbl_puan;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btn_anamenu;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
