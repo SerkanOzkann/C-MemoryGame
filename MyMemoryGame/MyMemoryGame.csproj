@@ -188,5 +188,35 @@
   <ItemGroup>
     <None Include="bin\Debug\EasyCOMPUTERHARDWARE\k5.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HardINSTRUMENT\z1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HardINSTRUMENT\z2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HardINSTRUMENT\z3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HardINSTRUMENT\z4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HardINSTRUMENT\z5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HardINSTRUMENT\z6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HardINSTRUMENT\z7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HardINSTRUMENT\z8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HardINSTRUMENT\z9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HardINSTRUMENT\z10.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

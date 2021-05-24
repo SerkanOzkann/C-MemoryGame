@@ -154,9 +154,9 @@
             this.lbl_time.Location = new System.Drawing.Point(283, 52);
             this.lbl_time.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_time.Name = "lbl_time";
-            this.lbl_time.Size = new System.Drawing.Size(68, 28);
+            this.lbl_time.Size = new System.Drawing.Size(44, 28);
             this.lbl_time.TabIndex = 3;
-            this.lbl_time.Text = "00:30";
+            this.lbl_time.Text = ":30";
             // 
             // lbl_bilgi
             // 

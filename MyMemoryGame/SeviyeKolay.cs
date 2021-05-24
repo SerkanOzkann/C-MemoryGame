@@ -242,7 +242,7 @@ namespace MyMemoryGame
             gosterhak = 3;
             lbl_bilgi.Text = ":" + kalan;
             lbl_puan.Text = "0";
-            lbl_canli.Text = "MyMemoryGame Seviye:Orta";
+            lbl_canli.Text = "MyMemoryGame Seviye:Kolay";
             btn_goster.Text = "Goster(3)";
         }
 

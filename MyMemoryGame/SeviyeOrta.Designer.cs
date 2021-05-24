@@ -98,7 +98,6 @@
             this.lbl_bilgi.Size = new System.Drawing.Size(24, 28);
             this.lbl_bilgi.TabIndex = 1;
             this.lbl_bilgi.Text = "8";
-            //this.lbl_bilgi.Click += new System.EventHandler(this.lbl_bilgi_Click);
             // 
             // btn_goster
             // 

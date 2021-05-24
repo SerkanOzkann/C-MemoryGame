@@ -199,4 +199,34 @@
   <data name="k5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\EasyCOMPUTERHARDWARE\k5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="z1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HardINSTRUMENT\z1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HardINSTRUMENT\z10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HardINSTRUMENT\z2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HardINSTRUMENT\z3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HardINSTRUMENT\z4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HardINSTRUMENT\z5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HardINSTRUMENT\z6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HardINSTRUMENT\z7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HardINSTRUMENT\z8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\HardINSTRUMENT\z9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
