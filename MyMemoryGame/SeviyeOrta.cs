@@ -21,7 +21,8 @@ namespace MyMemoryGame
         byte islem = 0;
        PictureBox oncekiResim;
         byte kalan = 8;
-        byte time = 59;
+        byte gosterhak = 3;
+        byte time = 60;
 
 
         void resimSifirla()
@@ -140,7 +141,7 @@ namespace MyMemoryGame
                 sesDogru.Play();
                 if (kalan == 0)
                 {   sesAlkis.Play();
-                    lbl_canli.Text = "Tebrikler." + lbl_gamer.Text + " Güzel Oyun! Toplam Puan:" + lbl_puan.Text + "Süre" + lbl_time.Text;
+                    lbl_canli.Text = "Tebrikler." + lbl_gamer.Text + " Güzel Oyun!  Toplam Puan:" +  lbl_puan.Text +  " Süre " + lbl_time.Text;
                     lbl_bilgi.Text = "Tebrikler";
                     timer1.Enabled = false;
                 }
@@ -212,6 +213,8 @@ namespace MyMemoryGame
             Application.DoEvents();
             System.Threading.Thread.Sleep(1000);
             resimSifirla();
+            if (--gosterhak == 0) btn_goster.Enabled = false;
+            btn_goster.Text = "Goster (" + gosterhak + ")";
         }
 
         void gizle()
@@ -229,9 +232,9 @@ namespace MyMemoryGame
 
             goster();
 
-            lbl_canli.Text = "-5 puan. daha dikkatli bakmalısın..";
+            lbl_canli.Text = "Gösterme Yapıldı...";
             islem = 0;
-            lbl_puan.Text = Convert.ToString(Convert.ToInt32(lbl_puan.Text) - 3);
+            //lbl_puan.Text = Convert.ToString(Convert.ToInt32(lbl_puan.Text) - 3);
 
         }
 
@@ -255,17 +258,22 @@ namespace MyMemoryGame
             tagDagit();
             btn_goster.Visible = true;
             btn_yenioyun.Visible = true;
-            button1.Visible = false;
+            btn_basla.Visible = false;
             kalan = 8;
             islem = 0;
             time = 60;
+            
             timer1.Enabled = true;
         }
         private void btn_yenioyun_Click(object sender, EventArgs e)
         {
             NewGame();
             VisibleAc();
+            gosterhak = 3;
             lbl_bilgi.Text = ":" + kalan;
+            lbl_puan.Text = "0";
+            lbl_canli.Text = "MyMemoryGame Seviye:Orta";
+            btn_goster.Text = "Goster(3)";
 
         }
 
@@ -328,10 +336,7 @@ namespace MyMemoryGame
                 this.Hide();
         }
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {

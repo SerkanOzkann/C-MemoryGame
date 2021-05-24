@@ -52,6 +52,10 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gb_anlik = new System.Windows.Forms.GroupBox();
+            this.lbl_canli = new System.Windows.Forms.Label();
+            this.pb_bilgi2 = new System.Windows.Forms.PictureBox();
+            this.btn_basla = new System.Windows.Forms.Button();
             this.gb_orta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_durum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_puan)).BeginInit();
@@ -67,6 +71,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gb_anlik.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_bilgi2)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_anamenu
@@ -74,7 +80,7 @@
             this.btn_anamenu.BackColor = System.Drawing.Color.Yellow;
             this.btn_anamenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_anamenu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_anamenu.Location = new System.Drawing.Point(828, 284);
+            this.btn_anamenu.Location = new System.Drawing.Point(876, 525);
             this.btn_anamenu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_anamenu.Name = "btn_anamenu";
             this.btn_anamenu.Size = new System.Drawing.Size(135, 58);
@@ -198,7 +204,7 @@
             this.btn_cikis.BackColor = System.Drawing.Color.Red;
             this.btn_cikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cikis.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_cikis.Location = new System.Drawing.Point(828, 351);
+            this.btn_cikis.Location = new System.Drawing.Point(876, 592);
             this.btn_cikis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_cikis.Name = "btn_cikis";
             this.btn_cikis.Size = new System.Drawing.Size(135, 58);
@@ -212,7 +218,7 @@
             this.btn_yenioyun.BackColor = System.Drawing.Color.Green;
             this.btn_yenioyun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_yenioyun.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_yenioyun.Location = new System.Drawing.Point(828, 151);
+            this.btn_yenioyun.Location = new System.Drawing.Point(876, 392);
             this.btn_yenioyun.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_yenioyun.Name = "btn_yenioyun";
             this.btn_yenioyun.Size = new System.Drawing.Size(135, 58);
@@ -225,12 +231,12 @@
             this.btn_goster.BackColor = System.Drawing.Color.DarkOrange;
             this.btn_goster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_goster.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_goster.Location = new System.Drawing.Point(828, 218);
+            this.btn_goster.Location = new System.Drawing.Point(876, 459);
             this.btn_goster.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_goster.Name = "btn_goster";
             this.btn_goster.Size = new System.Drawing.Size(135, 58);
             this.btn_goster.TabIndex = 23;
-            this.btn_goster.Text = "Göster";
+            this.btn_goster.Text = "Göster(3)";
             this.btn_goster.UseVisualStyleBackColor = false;
             // 
             // pictureBox8
@@ -373,13 +379,65 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "0";
             // 
+            // gb_anlik
+            // 
+            this.gb_anlik.BackColor = System.Drawing.Color.Transparent;
+            this.gb_anlik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.gb_anlik.Controls.Add(this.lbl_canli);
+            this.gb_anlik.Controls.Add(this.pb_bilgi2);
+            this.gb_anlik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gb_anlik.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gb_anlik.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.gb_anlik.Location = new System.Drawing.Point(835, 22);
+            this.gb_anlik.Name = "gb_anlik";
+            this.gb_anlik.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gb_anlik.Size = new System.Drawing.Size(205, 295);
+            this.gb_anlik.TabIndex = 28;
+            this.gb_anlik.TabStop = false;
+            this.gb_anlik.Text = "Canlı Bilgiler";
+            // 
+            // lbl_canli
+            // 
+            this.lbl_canli.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_canli.ForeColor = System.Drawing.Color.White;
+            this.lbl_canli.Location = new System.Drawing.Point(6, 133);
+            this.lbl_canli.Name = "lbl_canli";
+            this.lbl_canli.Size = new System.Drawing.Size(188, 128);
+            this.lbl_canli.TabIndex = 1;
+            this.lbl_canli.Text = "MyMemoryGame Seviye:Kolay";
+            this.lbl_canli.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pb_bilgi2
+            // 
+            this.pb_bilgi2.Image = global::MyMemoryGame.Properties.Resources.question_mark;
+            this.pb_bilgi2.Location = new System.Drawing.Point(0, 29);
+            this.pb_bilgi2.Name = "pb_bilgi2";
+            this.pb_bilgi2.Size = new System.Drawing.Size(200, 91);
+            this.pb_bilgi2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_bilgi2.TabIndex = 0;
+            this.pb_bilgi2.TabStop = false;
+            // 
+            // btn_basla
+            // 
+            this.btn_basla.BackColor = System.Drawing.Color.Lime;
+            this.btn_basla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_basla.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_basla.Location = new System.Drawing.Point(876, 332);
+            this.btn_basla.Name = "btn_basla";
+            this.btn_basla.Size = new System.Drawing.Size(136, 49);
+            this.btn_basla.TabIndex = 29;
+            this.btn_basla.Text = "Başla";
+            this.btn_basla.UseVisualStyleBackColor = false;
+            // 
             // SeviyeKolay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MyMemoryGame.Properties.Resources.bg4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1013, 681);
+            this.ClientSize = new System.Drawing.Size(1062, 775);
+            this.Controls.Add(this.btn_basla);
+            this.Controls.Add(this.gb_anlik);
             this.Controls.Add(this.btn_anamenu);
             this.Controls.Add(this.gb_orta);
             this.Controls.Add(this.btn_cikis);
@@ -400,6 +458,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "SeviyeKolay";
             this.Text = "MyMemoryEasy";
+            this.Load += new System.EventHandler(this.SeviyeKolay_Load);
             this.gb_orta.ResumeLayout(false);
             this.gb_orta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_durum)).EndInit();
@@ -416,6 +475,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gb_anlik.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_bilgi2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -445,5 +506,9 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox gb_anlik;
+        private System.Windows.Forms.Label lbl_canli;
+        private System.Windows.Forms.PictureBox pb_bilgi2;
+        private System.Windows.Forms.Button btn_basla;
     }
 }

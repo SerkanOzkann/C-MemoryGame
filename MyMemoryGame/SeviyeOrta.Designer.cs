@@ -45,9 +45,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btn_anamenu = new System.Windows.Forms.Button();
             this.gb_anlik = new System.Windows.Forms.GroupBox();
-            this.pb_bilgi2 = new System.Windows.Forms.PictureBox();
             this.lbl_canli = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pb_bilgi2 = new System.Windows.Forms.PictureBox();
+            this.btn_basla = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -105,12 +105,12 @@
             this.btn_goster.BackColor = System.Drawing.Color.DarkOrange;
             this.btn_goster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_goster.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_goster.Location = new System.Drawing.Point(719, 242);
+            this.btn_goster.Location = new System.Drawing.Point(711, 408);
             this.btn_goster.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_goster.Name = "btn_goster";
             this.btn_goster.Size = new System.Drawing.Size(136, 49);
             this.btn_goster.TabIndex = 2;
-            this.btn_goster.Text = "Göster";
+            this.btn_goster.Text = "Göster(3)";
             this.btn_goster.UseVisualStyleBackColor = false;
             this.btn_goster.Visible = false;
             this.btn_goster.Click += new System.EventHandler(this.btn_goster_Click);
@@ -120,7 +120,7 @@
             this.btn_yenioyun.BackColor = System.Drawing.Color.Green;
             this.btn_yenioyun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_yenioyun.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_yenioyun.Location = new System.Drawing.Point(719, 186);
+            this.btn_yenioyun.Location = new System.Drawing.Point(711, 352);
             this.btn_yenioyun.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_yenioyun.Name = "btn_yenioyun";
             this.btn_yenioyun.Size = new System.Drawing.Size(136, 49);
@@ -135,7 +135,7 @@
             this.btn_cikis.BackColor = System.Drawing.Color.Red;
             this.btn_cikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cikis.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_cikis.Location = new System.Drawing.Point(719, 354);
+            this.btn_cikis.Location = new System.Drawing.Point(711, 520);
             this.btn_cikis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cikis.Name = "btn_cikis";
             this.btn_cikis.Size = new System.Drawing.Size(136, 49);
@@ -158,7 +158,7 @@
             this.gb_orta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gb_orta.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.gb_orta.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.gb_orta.Location = new System.Drawing.Point(97, 3);
+            this.gb_orta.Location = new System.Drawing.Point(12, 3);
             this.gb_orta.Name = "gb_orta";
             this.gb_orta.Size = new System.Drawing.Size(638, 102);
             this.gb_orta.TabIndex = 5;
@@ -203,7 +203,7 @@
             this.lbl_time.Name = "lbl_time";
             this.lbl_time.Size = new System.Drawing.Size(36, 28);
             this.lbl_time.TabIndex = 3;
-            this.lbl_time.Text = "59";
+            this.lbl_time.Text = "60";
             // 
             // pb_timer
             // 
@@ -245,7 +245,7 @@
             this.btn_anamenu.BackColor = System.Drawing.Color.Yellow;
             this.btn_anamenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_anamenu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_anamenu.Location = new System.Drawing.Point(719, 298);
+            this.btn_anamenu.Location = new System.Drawing.Point(711, 464);
             this.btn_anamenu.Name = "btn_anamenu";
             this.btn_anamenu.Size = new System.Drawing.Size(136, 49);
             this.btn_anamenu.TabIndex = 6;
@@ -262,13 +262,24 @@
             this.gb_anlik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gb_anlik.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.gb_anlik.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.gb_anlik.Location = new System.Drawing.Point(681, 433);
+            this.gb_anlik.Location = new System.Drawing.Point(681, 3);
             this.gb_anlik.Name = "gb_anlik";
             this.gb_anlik.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gb_anlik.Size = new System.Drawing.Size(200, 273);
             this.gb_anlik.TabIndex = 7;
             this.gb_anlik.TabStop = false;
             this.gb_anlik.Text = "Canlı Bilgiler";
+            // 
+            // lbl_canli
+            // 
+            this.lbl_canli.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_canli.ForeColor = System.Drawing.Color.White;
+            this.lbl_canli.Location = new System.Drawing.Point(6, 133);
+            this.lbl_canli.Name = "lbl_canli";
+            this.lbl_canli.Size = new System.Drawing.Size(188, 128);
+            this.lbl_canli.TabIndex = 1;
+            this.lbl_canli.Text = "MyMemoryGame Seviye:Orta";
+            this.lbl_canli.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pb_bilgi2
             // 
@@ -280,28 +291,18 @@
             this.pb_bilgi2.TabIndex = 0;
             this.pb_bilgi2.TabStop = false;
             // 
-            // lbl_canli
+            // btn_basla
             // 
-            this.lbl_canli.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_canli.ForeColor = System.Drawing.Color.White;
-            this.lbl_canli.Location = new System.Drawing.Point(6, 133);
-            this.lbl_canli.Name = "lbl_canli";
-            this.lbl_canli.Size = new System.Drawing.Size(188, 128);
-            this.lbl_canli.TabIndex = 1;
-            this.lbl_canli.Text = "Anlik Oyun Bilgileri";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(719, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 49);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Başla";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_basla.BackColor = System.Drawing.Color.Lime;
+            this.btn_basla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_basla.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_basla.Location = new System.Drawing.Point(711, 291);
+            this.btn_basla.Name = "btn_basla";
+            this.btn_basla.Size = new System.Drawing.Size(136, 49);
+            this.btn_basla.TabIndex = 8;
+            this.btn_basla.Text = "Başla";
+            this.btn_basla.UseVisualStyleBackColor = false;
+            this.btn_basla.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -568,7 +569,7 @@
             this.ClientSize = new System.Drawing.Size(893, 720);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_basla);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.gb_anlik);
             this.Controls.Add(this.pictureBox4);
@@ -642,7 +643,7 @@
         private System.Windows.Forms.GroupBox gb_anlik;
         private System.Windows.Forms.PictureBox pb_bilgi2;
         private System.Windows.Forms.Label lbl_canli;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_basla;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox5;

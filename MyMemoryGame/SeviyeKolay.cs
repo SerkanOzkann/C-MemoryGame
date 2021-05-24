@@ -21,5 +21,10 @@ namespace MyMemoryGame
         {
 
         }
+
+        private void SeviyeKolay_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
