@@ -173,5 +173,20 @@
   <ItemGroup>
     <None Include="Resources\question-mark.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\EasyCOMPUTERHARDWARE\k1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\EasyCOMPUTERHARDWARE\k2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\EasyCOMPUTERHARDWARE\k3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\EasyCOMPUTERHARDWARE\k4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\EasyCOMPUTERHARDWARE\k5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

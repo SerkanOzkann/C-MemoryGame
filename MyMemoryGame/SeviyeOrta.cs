@@ -110,7 +110,6 @@ namespace MyMemoryGame
                     break;
             }
             
-
         }
 
         void karsilastirma(PictureBox onceki, PictureBox sonraki)
@@ -146,9 +145,7 @@ namespace MyMemoryGame
                     timer1.Enabled = false;
                 }
                 else
-               
-                lbl_bilgi.Text = ":" + kalan;
-               
+                    lbl_bilgi.Text = ":" + kalan;
             }
             else
             {
@@ -166,14 +163,8 @@ namespace MyMemoryGame
 
         private void SeviyeOrta_Load(object sender, EventArgs e)
         {
-            
-
             lbl_puan.Text = "0";
             lbl_gamer.Text = Giris.sendData;
-
-            
-
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -181,7 +172,6 @@ namespace MyMemoryGame
             PictureBox simdikiResim = (sender as PictureBox);
             showImage((sender as PictureBox));
 
-            //simdikiResim.Image = Image.FromFile((sender as PictureBox).Tag.ToString() + ".png");
 
             if (islem == 0)
             {
@@ -229,13 +219,9 @@ namespace MyMemoryGame
         }
         private void btn_goster_Click(object sender, EventArgs e)
         {
-
             goster();
-
             lbl_canli.Text = "Gösterme Yapıldı...";
             islem = 0;
-            //lbl_puan.Text = Convert.ToString(Convert.ToInt32(lbl_puan.Text) - 3);
-
         }
 
         void VisibleAc()
@@ -252,7 +238,6 @@ namespace MyMemoryGame
 
         void NewGame()
         {
-            
             resimSifirla();
             tagSifirla();
             tagDagit();
@@ -262,7 +247,6 @@ namespace MyMemoryGame
             kalan = 8;
             islem = 0;
             time = 60;
-            
             timer1.Enabled = true;
         }
         private void btn_yenioyun_Click(object sender, EventArgs e)
@@ -276,12 +260,6 @@ namespace MyMemoryGame
             btn_goster.Text = "Goster(3)";
 
         }
-
-        private void lbl_bilgi_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_cikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -316,16 +294,12 @@ namespace MyMemoryGame
             }
             else if (time == 0)
             {
-                
                 sesTime.Play();
                 lbl_canli.Text = "Maalesef Süre Doldu..";
                 lbl_bilgi.Text = "Süre Doldu";
                 lbl_time.Text = "0";
                 dur();
                 timer1.Enabled = false;
-
-
-
             }
         }
 
@@ -335,9 +309,6 @@ namespace MyMemoryGame
                 giris.Show();
                 this.Hide();
         }
-
-       
-
         private void button1_Click(object sender, EventArgs e)
         {
             NewGame();

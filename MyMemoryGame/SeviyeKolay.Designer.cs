@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SeviyeKolay));
             this.btn_anamenu = new System.Windows.Forms.Button();
             this.gb_orta = new System.Windows.Forms.GroupBox();
@@ -56,6 +57,7 @@
             this.lbl_canli = new System.Windows.Forms.Label();
             this.pb_bilgi2 = new System.Windows.Forms.PictureBox();
             this.btn_basla = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.gb_orta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_durum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_puan)).BeginInit();
@@ -87,6 +89,7 @@
             this.btn_anamenu.TabIndex = 27;
             this.btn_anamenu.Text = "Ana Menü";
             this.btn_anamenu.UseVisualStyleBackColor = false;
+            this.btn_anamenu.Click += new System.EventHandler(this.btn_anamenu_Click);
             // 
             // gb_orta
             // 
@@ -225,6 +228,8 @@
             this.btn_yenioyun.TabIndex = 24;
             this.btn_yenioyun.Text = "Yeni Oyun";
             this.btn_yenioyun.UseVisualStyleBackColor = false;
+            this.btn_yenioyun.Visible = false;
+            this.btn_yenioyun.Click += new System.EventHandler(this.btn_yenioyun_Click);
             // 
             // btn_goster
             // 
@@ -238,6 +243,8 @@
             this.btn_goster.TabIndex = 23;
             this.btn_goster.Text = "Göster(3)";
             this.btn_goster.UseVisualStyleBackColor = false;
+            this.btn_goster.Visible = false;
+            this.btn_goster.Click += new System.EventHandler(this.btn_goster_Click);
             // 
             // pictureBox8
             // 
@@ -252,6 +259,7 @@
             this.pictureBox8.TabIndex = 19;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Tag = "0";
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox4
             // 
@@ -266,6 +274,7 @@
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "0";
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox7
             // 
@@ -280,6 +289,7 @@
             this.pictureBox7.TabIndex = 15;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Tag = "0";
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox3
             // 
@@ -294,6 +304,7 @@
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "0";
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox10
             // 
@@ -308,6 +319,7 @@
             this.pictureBox10.TabIndex = 12;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Tag = "0";
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox9
             // 
@@ -322,6 +334,7 @@
             this.pictureBox9.TabIndex = 10;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Tag = "0";
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox6
             // 
@@ -336,6 +349,7 @@
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Tag = "0";
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox5
             // 
@@ -350,6 +364,7 @@
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Tag = "0";
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -364,6 +379,7 @@
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "0";
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox1
             // 
@@ -378,6 +394,7 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "0";
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // gb_anlik
             // 
@@ -428,6 +445,12 @@
             this.btn_basla.TabIndex = 29;
             this.btn_basla.Text = "Başla";
             this.btn_basla.UseVisualStyleBackColor = false;
+            this.btn_basla.Click += new System.EventHandler(this.btn_basla_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // SeviyeKolay
             // 
@@ -435,7 +458,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MyMemoryGame.Properties.Resources.bg4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1062, 775);
+            this.ClientSize = new System.Drawing.Size(1062, 671);
             this.Controls.Add(this.btn_basla);
             this.Controls.Add(this.gb_anlik);
             this.Controls.Add(this.btn_anamenu);
@@ -510,5 +533,6 @@
         private System.Windows.Forms.Label lbl_canli;
         private System.Windows.Forms.PictureBox pb_bilgi2;
         private System.Windows.Forms.Button btn_basla;
+        private System.Windows.Forms.Timer timer1;
     }
 }
