@@ -60,11 +60,11 @@
     <Compile Include="SeviyeKolay.Designer.cs">
       <DependentUpon>SeviyeKolay.cs</DependentUpon>
     </Compile>
-    <Compile Include="SeviyeOrta.cs">
+    <Compile Include="SeviyeOrta1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SeviyeOrta.Designer.cs">
-      <DependentUpon>SeviyeOrta.cs</DependentUpon>
+    <Compile Include="SeviyeOrta1.Designer.cs">
+      <DependentUpon>SeviyeOrta1.cs</DependentUpon>
     </Compile>
     <Compile Include="SeviyeZor.cs">
       <SubType>Form</SubType>
@@ -88,8 +88,8 @@
     <EmbeddedResource Include="SeviyeKolay.resx">
       <DependentUpon>SeviyeKolay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SeviyeOrta.resx">
-      <DependentUpon>SeviyeOrta.cs</DependentUpon>
+    <EmbeddedResource Include="SeviyeOrta1.resx">
+      <DependentUpon>SeviyeOrta1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SeviyeZor.resx">
       <DependentUpon>SeviyeZor.cs</DependentUpon>

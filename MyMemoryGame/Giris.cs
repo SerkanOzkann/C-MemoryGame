@@ -57,7 +57,7 @@ namespace MyMemoryGame
 
         private void btn_orta_Click(object sender, EventArgs e)
         {
-            SeviyeOrta f2 = new SeviyeOrta();
+            SeviyeOrta1 f2 = new SeviyeOrta1();
             if (tb_kadi.Text == "")
             {
                 MessageBox.Show("Oyuncu adı boş bırakılamaz!");

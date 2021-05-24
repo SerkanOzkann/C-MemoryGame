@@ -11,15 +11,14 @@ using System.Media;
 
 namespace MyMemoryGame
 {
-    public partial class SeviyeOrta : Form
+    public partial class SeviyeOrta1 : Form
     {
-        public SeviyeOrta()
+        public SeviyeOrta1()
         {
             InitializeComponent();
         }
-
         byte islem = 0;
-       PictureBox oncekiResim;
+        PictureBox oncekiResim;
         byte kalan = 8;
         byte gosterhak = 3;
         byte time = 60;
@@ -52,7 +51,7 @@ namespace MyMemoryGame
             int[] sayilar = new int[16];
             Random rnd = new Random();
             byte i = 0;
-            while (i<16)
+            while (i < 16)
             {
                 int rastgele = rnd.Next(1, 17);
                 if (Array.IndexOf(sayilar, rastgele) == -1)
@@ -109,7 +108,7 @@ namespace MyMemoryGame
                     box.Image = Properties.Resources.block;
                     break;
             }
-            
+
         }
 
         void karsilastirma(PictureBox onceki, PictureBox sonraki)
@@ -131,7 +130,7 @@ namespace MyMemoryGame
             {
                 Application.DoEvents();
                 System.Threading.Thread.Sleep(500);
-                
+
                 onceki.Visible = false;
                 sonraki.Visible = false;
                 kalan--;
@@ -139,8 +138,9 @@ namespace MyMemoryGame
                 lbl_canli.Text = "Tebrikler! Doğru Cevap +10 Puan:)";
                 sesDogru.Play();
                 if (kalan == 0)
-                {   sesAlkis.Play();
-                    lbl_canli.Text = "Tebrikler." + lbl_gamer.Text + " Güzel Oyun!  Toplam Puan:" +  lbl_puan.Text +  " Süre " + lbl_time.Text;
+                {
+                    sesAlkis.Play();
+                    lbl_canli.Text = "Tebrikler." + lbl_gamer.Text + " Güzel Oyun!  Toplam Puan:" + lbl_puan.Text + " Süre " + lbl_time.Text;
                     lbl_bilgi.Text = "Tebrikler";
                     timer1.Enabled = false;
                 }
@@ -152,21 +152,14 @@ namespace MyMemoryGame
                 sesYanlis.Play();
                 lbl_puan.Text = Convert.ToString(Convert.ToInt32(lbl_puan.Text) - 5);
                 lbl_canli.Text = "Yanlış Cevap -5 Puan Daha Dikkatli Bakmalısın!";
-                
+
                 Application.DoEvents();
                 System.Threading.Thread.Sleep(500);
-                onceki.Image= Image.FromFile("block.png");
-                sonraki.Image= Image.FromFile("block.png");
-                
+                onceki.Image = Image.FromFile("block.png");
+                sonraki.Image = Image.FromFile("block.png");
+
             }
         }
-
-        private void SeviyeOrta_Load(object sender, EventArgs e)
-        {
-            lbl_puan.Text = "0";
-            lbl_gamer.Text = Giris.sendData;
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             PictureBox simdikiResim = (sender as PictureBox);
@@ -184,7 +177,7 @@ namespace MyMemoryGame
                 {
                     MessageBox.Show("Aynı Resim");
                     islem = 0;
-                    oncekiResim.Image= Image.FromFile("block.png");
+                    oncekiResim.Image = Image.FromFile("block.png");
                 }
 
                 else
@@ -217,13 +210,6 @@ namespace MyMemoryGame
                 }
             }
         }
-        private void btn_goster_Click(object sender, EventArgs e)
-        {
-            goster();
-            lbl_canli.Text = "Gösterme Yapıldı...";
-            islem = 0;
-        }
-
         void VisibleAc()
         {
             foreach (Control x in this.Controls)
@@ -231,7 +217,7 @@ namespace MyMemoryGame
                 if (x is PictureBox)
                 {
                     (x as PictureBox).Visible = true;
-                    
+
                 }
             }
         }
@@ -249,23 +235,7 @@ namespace MyMemoryGame
             time = 60;
             timer1.Enabled = true;
         }
-        private void btn_yenioyun_Click(object sender, EventArgs e)
-        {
-            NewGame();
-            VisibleAc();
-            gosterhak = 3;
-            lbl_bilgi.Text = ":" + kalan;
-            lbl_puan.Text = "0";
-            lbl_canli.Text = "MyMemoryGame Seviye:Orta";
-            btn_goster.Text = "Goster(3)";
-
-        }
-        private void btn_cikis_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        void dur()
+         void dur()
         {
             foreach (Control x in this.Controls)
             {
@@ -275,6 +245,41 @@ namespace MyMemoryGame
                 }
             }
         }
+         private void btn_basla_Click(object sender, EventArgs e)
+        {
+            NewGame();
+            VisibleAc();
+        }
+
+        private void SeviyeOrta1_Load_1(object sender, EventArgs e)
+        {
+            lbl_puan.Text = "0";
+            lbl_gamer.Text = Giris.sendData;
+        }
+
+        private void btn_goster_Click_1(object sender, EventArgs e)
+        {
+            goster();
+            lbl_canli.Text = "Gösterme Yapıldı...";
+            islem = 0;
+        }
+
+        private void btn_yenioyun_Click_1(object sender, EventArgs e)
+        {
+            NewGame();
+            VisibleAc();
+            gosterhak = 3;
+            lbl_bilgi.Text = ":" + kalan;
+            lbl_puan.Text = "0";
+            lbl_canli.Text = "MyMemoryGame Seviye:Orta";
+            btn_goster.Text = "Goster(3)";
+        }
+
+        private void btn_cikis_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             SoundPlayer sesTime = new SoundPlayer();
@@ -288,7 +293,7 @@ namespace MyMemoryGame
             time -= 1;
             lbl_time.Text = ":" + time;
 
-            if (time <=12 && time>=1 )
+            if (time <= 12 && time >= 1)
             {
                 sesTimeOn.Play();
             }
@@ -306,13 +311,8 @@ namespace MyMemoryGame
         private void btn_anamenu_Click(object sender, EventArgs e)
         {
             Giris giris = new Giris();
-                giris.Show();
-                this.Hide();
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            NewGame();
-            VisibleAc();
+            giris.Show();
+            this.Hide();
         }
     }
 }
